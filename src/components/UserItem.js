@@ -15,16 +15,16 @@ export class UserItem extends Component {
   //     // console.log('123');
   //   }
 
-  state = {
-    login: 'mojombo',
-    id: 1,
-    avatar_url: 'https://avatars0.githubusercontent.com/u/1?v=4',
-    url: 'https://api.github.com/users/mojombo',
-    html_url: 'https://github.com/mojombo',
-  };
+  // state = {
+  //   login: 'mojombo',
+  //   id: 1,
+  //   avatar_url: 'https://avatars0.githubusercontent.com/u/1?v=4',
+  //   url: 'https://api.github.com/users/mojombo',
+  //   html_url: 'https://github.com/mojombo',
+  // };
 
   render() {
-    const { avatar_url, login, html_url, url, id } = this.state;
+    const { avatar_url, login, html_url } = this.props.user;
 
     return (
       <div className='card text-center'>

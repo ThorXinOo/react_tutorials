@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
+import Users from './components/Users';
 import './App.css';
 
 class App extends Component {
@@ -12,6 +13,9 @@ class App extends Component {
         {/* <Navbar /> */}
         {/* <Navbar title={numbers} icon={numbers} /> */}
         <Navbar title='Github Finder' icon='fab fa-github' />
+        <div className='container'>
+          <Users />
+        </div>
       </div>
     );
   }
