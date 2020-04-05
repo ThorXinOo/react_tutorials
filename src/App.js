@@ -1,8 +1,8 @@
 /** @format */
 
 import React, { Component } from 'react';
-import Navbar from './components/Navbar';
-import Users from './components/Users';
+import Navbar from './components/layout/Navbar';
+import Users from './components/users/Users';
 import './App.css';
 import axios from 'axios';
 
