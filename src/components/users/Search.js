@@ -7,10 +7,12 @@ export class Search extends Component {
     text: '',
   };
 
-  onSubmit(e) {
+  onSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state.text);
-  }
+    this.props.searchUsers(this.state.text);
+    // console.log(this.state.text);
+    this.setState({ text: '' });
+  };
   onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
@@ -18,7 +20,7 @@ export class Search extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.onSubmit.bind(this)} className='form'>
+        <form onSubmit={this.onSubmit} className='form'>
           <input
             type='text'
             name='text'
